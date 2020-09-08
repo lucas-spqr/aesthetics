@@ -1,0 +1,167 @@
+/* .moveable{
+    width: 50px;
+    height: 60px;
+    background: lightcoral;
+    position: absolute;
+} */
+
+:root{
+    --branco: #fefefe;
+    --preto: #161616;
+    --cinza: #282828;
+}
+
+.bgElements{
+    background: var(--cinza);
+    width: 600px;
+    height: 117px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    position: absolute;
+}
+
+.gridElements{
+    width: 600px;
+
+    display: grid;
+    grid-template-areas: 
+    "palette size pen eraser forms text";
+    grid-template-columns: 114px 172px 77px 72px 72px 92px;
+    grid-template-rows: 117px;
+}
+
+.divPalette{
+    width: 114px;
+    height: 117px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.palette{
+    width: 50px;
+    height: 50px;
+
+    background: url("./public/elements/palette.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.size{
+    width: 172px;
+    height: 117px;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.sizeRect{
+    width: 150px;
+    height: 4px;
+    background: url("./public/elements/size-rect.svg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.sizeCircle{
+    width: 27px;
+    height:27px;
+    background: url("./public/elements/size-circle.svg");
+
+    position: relative;
+    left: 10px;
+}
+
+.divPen{
+    width: 77px;
+    height: 117px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pen{
+    width: 50px;
+    height: 50px;
+
+    background: url("./public/elements/pen.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.divEraser{
+    width: 72px;
+    height: 117px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eraser{
+    width: 50px;
+    height: 50px;
+
+    background: url("./public/elements/eraser.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.divForms{
+    width: 72px;
+    height: 117px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms{
+    width: 50px;
+    height: 50px;
+
+    background: url("./public/elements/square.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.divText{
+    width: 92px;
+    height: 117px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    width: 50px;
+    height: 50px;
+
+    background: url("./public/elements/text.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.palette:hover,
+.sizeCircle:hover,
+.pen:hover,
+.eraser:hover,
+.forms:hover,
+.text:hover{
+    cursor: pointer;
+}
